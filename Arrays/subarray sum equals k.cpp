@@ -13,7 +13,7 @@ public:
             curr_sum += nums[i];
             if (curr_sum == k) {
                 count += 1;
-            } else if (mp.find(curr_sum - k) != mp.end()) {
+            }  if (mp.find(curr_sum - k) != mp.end()) {
                 count += mp[curr_sum - k];
             }
             mp[curr_sum] += 1;
