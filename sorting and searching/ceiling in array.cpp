@@ -12,7 +12,7 @@ int ceil(vector<int> a, int x)
         mid=(low+high)/2;
         if(a[mid]==x)
         {
-            return x;
+            return mid;
         }
         else if(a[mid]<x)
         {
@@ -21,7 +21,7 @@ int ceil(vector<int> a, int x)
 
         else 
         {
-            res=a[mid];
+            res=mid;
             high=mid-1;
         }
     }
